@@ -1,0 +1,26 @@
+import styled from "styled-components";
+
+export const ContainerFluid = styled.div`
+  background-color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.color};
+  border: 5px solid ${(props) => props.theme.color};
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+`;
+
+export const Container = styled.div`
+  background-color: ${(props) => props.theme.bgColor};
+  color: ${(props) => props.theme.color};
+  border: 5px solid ${(props) => props.theme.color};
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: 1024px) {
+    width: 75% !important;
+  }
+  @media (max-width: 500px) {
+    width: 100% !important;
+  }
+`;
